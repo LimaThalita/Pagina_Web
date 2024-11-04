@@ -1,0 +1,199 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff5e1; 
+    color: #444; 
+    margin: 0;
+    padding: 0;
+    background-image: url('https://bhbfood.com/wp-content/uploads/2024/02/35137.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative; 
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 245, 225, 0.43); 
+    z-index: -1; 
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background: linear-gradient(135deg, #f9c6d9, #89d4cc); /* Gradiente suave */
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #fff;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 1px;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffe5ec; /* Efeito hover */
+}
+
+/* Estilo das Seções e Formulários */
+main {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    background-color: #ffeef3; /* Cor de fundo das seções */
+    padding: 2em;
+    margin: 1em 0;
+    width: 90%;
+    max-width: 800px; /* Largura máxima */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+section h2 {
+    color: #e16a85; /* Cor do título */
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-top: 1em;
+}
+
+form input {
+    width: 100%;
+    padding: 0.7em;
+    margin-top: 0.5em;
+    border-radius: 6px;
+    border: 1px solid #ddd; /* Borda leve */
+    font-size: 1em;
+    color: #333; /* Cor do texto nos inputs */
+}
+
+form button {
+    background-color: #89d4cc; /* Cor do botão */
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.2em;
+    margin-top: 1.5em;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #78c0b6; /* Efeito hover no botão */
+}
+
+/* Estilo da Tabela de Produtos */
+#product-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* Cor de fundo da tabela */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#product-table th, #product-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#product-table th {
+    background-color: #89d4cc; /* Cor do cabeçalho da tabela */
+    color: white;
+}
+
+#product-table img {
+    max-width: 100px;
+    border-radius: 8px;
+}
+
+/* Botão de Remoção */
+button.remove-button {
+    background-color: #e16a85; /* Cor do botão de remoção */
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.remove-button:hover {
+    background-color: #c0586a; /* Efeito hover no botão de remoção */
+}
+
+#toggle-role {
+    background-color: #e0098e; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#toggle-role:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+#toggle-role:active {
+    background-color: #3e8e41; 
+    transform: scale(0.98); 
+}
+
+#toggle-role:focus {
+    outline: 2px solid #76c7c0; 
+}
+
+.about-page header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center; 
+}
+
+.about-page main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center; 
+}
+
+.about-page section {
+    text-align: center; 
+}

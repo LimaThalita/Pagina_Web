@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorveteria Diogenes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p><h1>Sorveteria Diogenes</h1></p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <button id="toggle-role">Trocar para Cliente</button>
+    </header>
+    <main>
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+            <table id="product-table">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Imagem</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <!-- Formulário de Adição de Produto, visível apenas para admin -->
+            <form id="product-form" style="display: none;">
+                <label for="product-name">Nome do Produto:</label>
+                <input type="text" id="product-name" required>
+                
+                <label for="product-price">Preço:</label>
+                <input type="number" id="product-price" required>
+                
+                <label for="product-image">URL da Imagem:</label>
+                <input type="text" id="product-image" placeholder="Cole a URL da imagem aqui" required>
+                
+                <button type="submit">Adicionar Produto</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
